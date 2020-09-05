@@ -1,0 +1,48 @@
+/*
+Basic format is 
+
+selector{
+    property1: value
+    property2: value
+}
+
+Selector can be Element, Class, Id
+
+An Element can be: h1, div, header, footer, span, strong, a , btn
+In order to use a class we need a period before the name i.e.
+Perios mean that whatever follow is a class name and NOT an html element name
+
+.class-name {
+    propertyL value;
+}
+
+and id is suppose to be unique so each element can only have one id 
+in order to style and id you use the # sign 
+
+*/
+
+h1{
+    color: greenyellow;
+}
+
+.btn{
+padding: 10px;
+color:white;
+}
+
+.btn-1{
+    background-color: green;
+}
+
+.btn-2{
+    background-color: dodgerblue;
+}
+
+.btn-3{
+    background-color: fuchsia;
+}
+
+div p {
+    font-weight: bold;
+    color: indigo;
+}
