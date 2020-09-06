@@ -19,6 +19,9 @@ Perios mean that whatever follow is a class name and NOT an html element name
 and id is suppose to be unique so each element can only have one id 
 in order to style and id you use the # sign 
 
+
+
+
 */
 
 h1{
@@ -45,4 +48,47 @@ color:white;
 div p {
     font-weight: bold;
     color: indigo;
+}
+
+
+/*
+For flex 
+use display
+
+align-items by deafult is 'strech' 
+this fills up the space of the flex-container 
+
+justify-content has space-evenly, space-around, space-between
+
+*/
+
+.flexbox-container{
+    display: flex;
+    background-color: yellow;
+    max-width: 900px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.flexbox-item{
+    width: 200px;
+    margin: 10px;
+    background-color: pink;
+    border: 5px solid black;
+    /*flex-shrink: 0;*/
+    
+}
+
+.flexbox-item-1{
+    min-height: 100px;
+}
+
+.flexbox-item-2{
+   min-height: 200px;
+}
+
+.flexbox-item-3{
+    min-height: 50px;
 }
