@@ -92,3 +92,36 @@ justify-content has space-evenly, space-around, space-between
 .flexbox-item-3{
     min-height: 50px;
 }
+
+/*
+Flex box lays out information in 1D
+Grid is 2D
+fr - fraction of your container space
+minmax - will streach if more space is required 
+*/
+
+.grid-container{
+background-color: teal;
+display: grid;
+/*template tells us how many columns we'll have*/
+grid-template-columns: repeat(4,4fr);
+grid-auto-rows: minmax(150px,auto);
+grid-gap: 20px;
+
+}
+
+.grid-item{
+    border: solid black;
+    margin: 10px
+}
+
+.grid-item-1{
+    grid-column: 1 / 4;
+    /*We can also use span for this*/
+}
+
+.grid-item-2{
+    grid-column: span 4;
+}
+
+
