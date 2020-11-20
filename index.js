@@ -99,7 +99,7 @@ to work around this use regex(regular expressions)
 */
 
 let str10 = "Please visit Microsoft and Microsoft!";
-var n = str10.replace(/Microsoft/g, "twitch");
+var n = str10.replace(/Microsoft/g, "peepo");
 console.log(n)
 
 
