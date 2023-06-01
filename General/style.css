@@ -125,7 +125,7 @@ grid-gap: 20px;
 }
 
 .grid-item-1{
-    grid-column: 1 / 4;
+    grid-column: 2 / 4;
     /*We can also use span for this*/
 }
 
