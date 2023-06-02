@@ -147,6 +147,60 @@ console.log(evens) // 4, 12, 20
   let powers = [2,2,2,2,2,2,2,2,2,2].map((item,index )=> Math.pow(item,index)) 
   console.log(powers)
 
+  //-------------------sort method----------------------//
+  // sort can differ on which sorting algo it uses depedning on the browser
+  // Note; sort by default is based on lexicographical order
+  // In order to sort by numeric we need to use a comparator function
+  // Syntax for comparator function arr.sort( (a, b) => a - b );
+
+let sortArr = [5,2,1,-10,8]
+
+sortArr = sortArr.sort((a,b) => {
   
+  console.log('a is currently: ' + a)
+  console.log('b is currently: ' + b)
+  console.log('Return value: ' + (a - b))
+  return a - b
+
+})
+
+console.log(sortArr)
 
 
+ //-------------------reverse method----------------------//
+ let revArr = [1, 2, 3, 4, 5];
+ revArr.reverse()
+console.log(revArr)
+
+ //-------------------split/join method----------------------//
+let sentence = 'Hello how are you doing today?'
+
+let splitArr = sentence.split(' ');
+let capArr = []
+splitArr.forEach(word => {
+  let firstLetter = word.charAt(0).toUpperCase()
+  word = firstLetter + word.slice(1)
+  capArr.push(word)
+})
+
+console.log(splitArr)
+console.log('This is the new array with caps:   ' + capArr)
+console.log(capArr.join(" "))
+
+ //-------------------reduce method----------------------//
+ //Syntax: let value = arr.reduce(function(accumulator, item, index, array)
+
+ let reduceArr = [1, 2, 3, 4, 5, 6];
+
+let result = reduceArr.reduce((sum, current) => sum + current, 0);
+
+console.log('Sum all array: ' + result)
+
+let allEvens = reduceArr.reduce((sum, current) => {
+  if(current % 2 === 0)
+  return sum + current
+
+  return sum
+},0)
+
+console.log('Sum of all evens: ' + allEvens)
